@@ -1,0 +1,35 @@
+<isset name="cashDeliveryFields" value="${pdict.forms.billingForm.cashOnDeliveryFields}" scope="page"/>
+
+<div class="row">
+    <div class="col-6">
+        <div class="cod-base-heading">${Resource.msg('label.input.header.cashOnDelivery','creditCard',null)}</div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="form-group ${cashDeliveryFields.captchaInput.htmlName}">
+            <input type="text" id="captchaInput" class="form-control"
+             value="${pdict.captchaGenerated}" >
+        </div>
+    </div>
+</div>
+
+<input type="hidden" name="captcha" value="${pdict.captchaGenerated}">
+
+<div class="row">
+    <div class="col-6">
+        <div class="form-group
+        <isif condition=${cashDeliveryFields.enteredCaptcha.mandatory === true}>required</isif>
+        ${cashDeliveryFields.enteredCaptcha.htmlName}">
+            <label class="form-control-label" for="enteredCaptcha">${Resource.msg('field.cash.delivery.reEnterCaptcha','creditCard',null)}</label>
+            <input type="text" class="form-control enteredCaptcha" id="enteredCaptcha"
+            <isprint value=${cashDeliveryFields.enteredCaptcha.attributes} encoding="off"/>
+                aria-describedby="enteredCaptchaInvalidMessage">
+            <div class="invalid-feedback" id="enteredCaptchaInvalidMessage"></div>
+        </div>
+    </div>
+</div>
+
+
+

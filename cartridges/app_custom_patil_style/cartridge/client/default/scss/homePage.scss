@@ -1,0 +1,15 @@
+@import "~base/homePage";
+
+.home-email-signup {
+    background-color: #F4F4F4;
+    
+    > .container {
+        padding-top: 0.625em;
+        padding-bottom: 0.625em;
+    }
+
+    .email-description {
+        padding-top: 0.375em;
+        color: $white;
+    }
+}

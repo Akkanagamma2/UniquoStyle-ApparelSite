@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-sm-6 offset-sm-3 offset-md-0 push-md-6">
+        <div class="mb-3">
+            <div class="card confirm-details">
+                <div class="card-header">
+                    <h2 class="card-header-custom">Style Credits</h2>
+                </div>
+                <div class="card-body">
+                    <p>
+                        <span class="summary-section-label">The Style Credits</span>
+                        <div>
+                            <img src="${URLUtils.staticURL('/images/creditCoins.png')}" alt="points"><br>
+                            <span class="credits-card total-reward">Total Credits : </span>
+                            <span class="credits-card total-reward-value">${pdict.credits}</span>
+                        </div>
+                        <div class="credits-card lastOrder-creditsTab">
+                            <span class="credits-card last-reward">last Order Credits : </span>
+                            <span class="credits-card last-reward-value">${pdict.lastCreditScore}</span>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

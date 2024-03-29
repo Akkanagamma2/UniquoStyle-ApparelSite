@@ -1,0 +1,48 @@
+<iscomment> http://httpbin.org/post </iscomment>
+<form action="${pdict.resp}" method="post">
+    <div class="form-group">
+        <label for="subscribe-form-email">
+            <isprint value="${pdict.subscribe.email.label}" encoding="htmlcontent" />
+        </label>
+        <input
+            type="email"
+            id="subscribe-form-email"
+            data-missing-error="${Resource.msg('error.message.required','forms',null)}"
+            data-pattern-mismatch="${Resource.msg('error.message.parse.email.profile.form','forms',null)}"
+            data-range-error="${Resource.msg('error.message.50orless','forms',null)}"
+            <isprint value=${pdict.subscribe.email.attributes} encoding="off" />>
+            <isif condition="${!pdict.subscribe.email.valid}">
+                <span style="color:red"><isprint value="${pdict.subscribe.email.error}" encoding="on" /></span>
+            </isif>
+    </div>
+
+    <div class="form-group">
+        <label for="subscribe-form-fname">
+            <isprint value="${pdict.subscribe.name.label}" encoding="htmlcontent" />
+        </label>
+        <input
+            type="text"
+            class="form-control"
+            id="subscribe-form-fname"
+            data-missing-error="${Resource.msg('error.message.required','forms',null)}"
+            data-range-error="${Resource.msg('error.message.50orless','forms',null)}"
+            <isprint value=${pdict.subscribe.name.attributes} encoding="off" />>
+    </div>
+
+
+    <iscomment> <script src="${URLUtils.absStatic('/js/recaptcha.js')}" async defer></script> </iscomment>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <div class="form-group required">
+        <div class="g-recaptcha" data-sitekey="6Lc90i4pAAAAAOUN9RYG5Nh7Jp440dxXRYkKZM5L">
+        </div>
+    </div>
+
+    <button type="submit" onsubmit="recaptchaResponse">Submit</button>
+</form>
+
+
+
+
+

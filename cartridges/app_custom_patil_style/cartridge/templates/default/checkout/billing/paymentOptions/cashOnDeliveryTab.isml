@@ -1,0 +1,14 @@
+<a
+        <isif condition="${pdict.navTabType === 'cash_delivery_content'}">
+            class="nav-link cash-delivery-content active"
+            <iselse>
+            class="nav-link cash-delivery-content"
+            </isif>
+            data-toggle="tab" href="#cash-delivery-content" aria-controls="cash-delivery-content" aria-selected="false" id="cash-delivery-content-tab" role="tab">
+            <img class="credit-card-option"
+                src="${URLUtils.staticURL('/images/cash-on-delivery.png')}"
+                height="32"
+                alt="${paymentOption.name}"
+                title="${paymentOption.name}"
+        >
+</a>

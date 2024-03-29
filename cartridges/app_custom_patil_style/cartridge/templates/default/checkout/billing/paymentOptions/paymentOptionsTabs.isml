@@ -1,0 +1,13 @@
+
+<isloop items="${pdict.order.billing.payment.applicablePaymentMethods}" var="paymentOption">
+    <isif condition="${paymentOption.ID === 'CREDIT_CARD'}">
+        <li class="nav-item" role="presentation" data-method-id="${paymentOption.ID}" >
+            <isinclude template="checkout/billing/paymentOptions/creditCardTab" />
+        </li>
+    <iselseif condition="${paymentOption.ID === 'CASH_ON_DELIVERY'}"/>
+        <li class="nav-item" role="presentation" data-method-id="${paymentOption.ID}" >
+            <isinclude template="checkout/billing/paymentOptions/cashOnDeliveryTab" />
+        </li>
+    </isif>
+</isloop>
+

@@ -1,0 +1,24 @@
+.tabBar-base-contentBlock {
+  vertical-align: top;
+  display: table-cell;
+  width: 65%;
+  padding: 24px 32px;
+  background: #fff;
+  border-radius: 0 4px 4px 0; }
+
+.cod-base-heading {
+  font-weight: 700;
+  font-size: 16px; }
+
+.codCardUI-base-Fee {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: fit-content;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  padding: 8px;
+  margin-bottom: 20px;
+  background: #f4f4f5;
+  border-radius: 2px; }

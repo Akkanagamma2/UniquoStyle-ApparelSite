@@ -1,0 +1,6 @@
+
+<script src="${URLUtils.absStatic('/js/recaptcha.js')}"></script>
+
+ <button class="g-recaptcha"
+        data-sitekey="6LfwVC4pAAAAAAmHBy9fv78Hzg1VDvfOu2jwKyQ8"
+        ></button>

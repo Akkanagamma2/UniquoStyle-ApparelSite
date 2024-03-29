@@ -1,0 +1,26 @@
+@import "~base/productTiles";
+
+.product-tile {
+    .image-container {
+        position: relative;
+        overflow: auto;
+        border-radius: 15px;
+
+        .quickview {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+
+            i {
+                &.fa-expand {
+                    color: rgba(0, 0, 0, 0.7);
+                }
+
+                &.fa-circle {
+                    color: rgba(255, 255, 255, 0.7);
+                    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+}

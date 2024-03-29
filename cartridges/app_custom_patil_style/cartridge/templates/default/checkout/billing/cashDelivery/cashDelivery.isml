@@ -1,0 +1,140 @@
+<style>
+    .cash-container {
+        vertical-align: top;
+        display: table-cell;
+        width: 65%;
+        padding: 24px 32px;
+        background: #fff;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .captcha-container {
+        position: absolute;
+        max-width: 300px;
+        width: 100%;
+        border-radius: 12px;
+        padding: 15px 25px 25px;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .cod-base-heading {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .codCardUI-base-Fee {
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+        align-items: flex-start;
+        padding: 8px;
+        margin-bottom: 20px;
+        background: #f4f4f5;
+        border-radius: 2px;
+    }
+
+    .input_field {
+        position: relative;
+        height: 45px;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .refresh_button {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background: #01718F;
+        height: 30px;
+        width: 30px;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .refresh_button:active {
+        transform: translateY(-50%) scale(0.98);
+    }
+
+    .input_field input,
+    .submit_button button {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .input_field input {
+        padding: 0 15px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+
+    }
+
+    .captch_box input {
+        color: #6b6b6b;
+        font-size: 22px;
+        pointer-events: none;
+    }
+
+    .captcha_input input:focus {
+        font-size: 22px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08);
+    }
+
+    .message {
+        font-size: 14px;
+        margin: 14px 0;
+        color: red;
+        display: none;
+    }
+
+    .submit_button button {
+        background: #01718F;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .submit_button button:active {
+        transform: scale(0.99);
+    }
+</style>
+
+
+
+<form action="${pdict.placeOrder}" method="POST">
+    <div class="cash-container">
+        <div class="captcha-container">
+
+            <div class="cod-base-heading">Cash On Delivery(cash/UPI)</div>
+            <div class="codCardUI-base-Fee">10 will be charged extra for cash on Delivery Option</div>
+            <div class="captch-base-container">
+                <div class="input_field captch_box">
+                    <input type="text" value="${pdict.captcha}"  disabled>
+                    <div class="refresh_button">
+                        <iscomment> <img src="${URLUtils.staticURL('/images/rotate.png')}" alt=""> </iscomment>
+                        <i class="fa fa-heart"></i>
+                    </div>
+                </div>
+                <input type="hidden" name="captcha" value="${pdict.captcha}">
+                <div class="input_field captcha_input">
+                    <input type="text" placeholder="Enter captcha" name="Read-captcha" value="">
+                </div>
+                <div class="message">
+                    Entered Captcha is correct
+                </div>
+                <div class="input_field submit_button">
+                    <button type="Submit">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

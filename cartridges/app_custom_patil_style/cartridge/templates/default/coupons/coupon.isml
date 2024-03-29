@@ -1,0 +1,46 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/coupon.css');
+    </isscript>
+
+    <div class="page-coupon">
+
+        <div class="account-account">
+            <div class="account-heading">
+                Account
+            </div>
+            <div>
+                ${pdict.currentCustomer}
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div>
+                <isloop items="${pdict.couponList}" var="coupon" status="loopstatus">
+                    <div class="coupon-card">
+                        <div>
+                            <div class="coupon-off-component sprites-couponBackGroundImage sprites-myCouponSprite">
+                                <div class="coupon-amount">New</div>
+                                <div class="coupon-offText">Coupon</div>
+                            </div>
+                            <div class="coupon-info">
+                                <div class="coupon-purchase-info">
+                                    <span class="coupon-label">${coupon.description}</span>
+                                </div>
+                                <div>
+                                    <span class="coupon-label">Code:</span>
+                                    <span class="coupon-coupon-code">${coupon.couponId}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coupon-coupon-detail">
+                        <span>Valid till : </span>
+                        <span class="coupon-expiry-date">${coupon.endDate}</span>
+                    </div>
+                </isloop>
+            </div>
+        </div>
+    </div>
+</isdecorate>

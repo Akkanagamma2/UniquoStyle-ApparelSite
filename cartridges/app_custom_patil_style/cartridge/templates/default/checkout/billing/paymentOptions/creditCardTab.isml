@@ -1,0 +1,25 @@
+<iscomment> <li class="nav-item" data-method-id="${paymentOption.ID}"> </iscomment>
+    <iscomment> <a class="nav-link credit-card-tab active" data-toggle="tab" href="#credit-card-content" role="tab">
+        <img class="credit-card-option"
+                src="${URLUtils.staticURL('/images/credit.png')}"
+                height="32"
+                alt="${paymentOption.name}"
+                title="${paymentOption.name}"
+        >
+    </a> </iscomment>
+<iscomment> </li> </iscomment>
+
+<a
+            <isif condition="${pdict.navTabType === 'credit_card_content'}">
+                class="nav-link credit-card-tab active"
+            <iselse>
+                class="nav-link credit-card-tab"
+            </isif>
+            data-toggle="tab" href="#credit-card-content" aria-controls="credit-card-content" aria-selected="true" id="credit-card-content-tab" role="tab">
+            <img class="credit-card-option"
+                src="${URLUtils.staticURL('/images/credit.png')}"
+                height="32"
+                alt="${paymentOption.name}"
+                title="${paymentOption.name}"
+        >
+</a>

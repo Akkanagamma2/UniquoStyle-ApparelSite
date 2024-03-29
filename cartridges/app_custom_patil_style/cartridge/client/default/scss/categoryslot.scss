@@ -1,0 +1,9 @@
+.category-slot .row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 20px;
+    margin-right: -15px;
+    margin-left: -15px;
+}

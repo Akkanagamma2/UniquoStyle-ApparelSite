@@ -1,0 +1,35 @@
+<isscript>
+        assets.addCss('/css/cashOnDelivery/cashondelivery.scss');
+</isscript>
+<div class="tabBar-base-contentBlock">
+    <div>
+        <form>
+            <div>
+                <div class="cod-base-heading">Cash On Delivery(cash/UPI)</div>
+                <div>
+                    <div class="codCardUI-base-Fee">10 will be charged extra for cash on Delivery Option</div>
+                    <div class="captch-base-container">
+                        <div>
+                            <div class="captcha-base-imageContainer">
+                                <img src="${URLUtils.staticURL('/images/captcha-bg.jpg')}" alt="captcha-bg">
+                                <span class="captcha-value">K M J a K y</span>
+                            </div>
+                            <button class="reload-btn"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                        </div>
+                        <div>
+                            <input type="text" name="captcha-enter" value="" placeholder="Enter the captcha">
+                            <div>
+                                <div class="status-check">Captcha is not matched</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="cod-help-text">you can pay via Cash/UPI on delivery</div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="cod-submit-btn" id="action-cod">Place Order</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="tab-pane ${pdict.navTabType === 'cash-delivery-content' ? 'active' : ''} cash-delivery-content" id="cash-delivery-content"
+    role="tabpanel" aria-labelledby="cash-delivery-content-tab">
+    <fieldset class="payment-form-fields">
+
+        <!--- payment method is credit card --->
+        <input type="hidden" class="form-control" name="${pdict.forms.billingForm.paymentMethod.htmlName}"
+            value="CASH_ON_DELIVERY">
+
+        <fieldset class="cash-delivery-form">
+            <isinclude template="checkout/billing/cashOnDeliveryForm" />
+        </fieldset>
+
+    </fieldset>
+</div>

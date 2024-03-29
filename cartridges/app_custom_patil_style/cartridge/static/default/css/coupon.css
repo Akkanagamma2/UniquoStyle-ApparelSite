@@ -1,0 +1,57 @@
+.page-content {
+  width: 76%;
+  margin: 15px;
+  padding: 10px;
+  font-size: 14px; }
+
+.coupon-card {
+  border: 0.5px solid #2a2c36;
+  box-shadow: 0 0 4px rgba(40, 44, 63, 0.08);
+  border-radius: 2px;
+  background-color: #fff;
+  padding: 0% 2%;
+  margin-bottom: 10px;
+  color: #282C3f; }
+
+.coupon-off-component {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 29%;
+  max-width: 100px;
+  color: #14cda8;
+  border-right: 1px solid #d4d5d9; }
+
+.sprites-couponBackGroundImage {
+  background-position: -362px -380px;
+  height: 90px;
+  width: 75px; }
+
+.sprites-myCouponSprite {
+  background: url(https://www.dreamstime.com/stock-illustration-seamless-heart-pattern-background-pink-hearts-valentine-s-day-image83272136) no-repeat;
+  display: inline-block; }
+
+.coupon-info {
+  padding: 20px 0px 10px 10px;
+  display: inline-block;
+  width: 64%; }
+
+.coupon-purchase-info {
+  margin: 10px 0px; }
+
+.coupon-label {
+  color: #7e818c; }
+
+.coupon-coupon-code {
+  text-transform: uppercase;
+  word-wrap: break-word; }
+
+.coupon-coupon-detail {
+  border-top: 1px solid #d4d5d9;
+  padding: 15px 0px; }
+
+.coupon-expiry-date {
+  font-weight: 800;
+  color: #696E79;
+  border-right: 1px solid #d4d5d9;
+  padding-right: 5px; }

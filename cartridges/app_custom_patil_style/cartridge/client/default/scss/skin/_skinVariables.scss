@@ -1,0 +1,23 @@
+@import "~base/components/skinVariables";
+
+:root {
+    /** ==================================================================== **/
+
+    /** Create Custom CSS Variables from "sfra bootstrap override" variables **/
+
+    /** ==================================================================== **/
+    
+    --color-primary: #01718F;
+
+    /** ==================================================================== **/
+
+    /** Define skin named variables here                                    **/
+
+    /** ==================================================================== **/
+    
+    --skin-primary-color-1: var(--color-primary);
+    --skin-primary-color-2: var(--color-primary);
+
+    --skin-heading-color-1: var(--color-primary);
+
+}

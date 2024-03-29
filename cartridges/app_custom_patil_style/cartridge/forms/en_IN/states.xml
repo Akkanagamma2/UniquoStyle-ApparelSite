@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+	<field formid="stateCode" label="label.input.state" type="string" mandatory="true" binding="stateCode" missing-error="address.state.missing" value-error="address.field.invalid" parse-error="error.message.required">
+		<options>
+			<option optionid="" 	label="resource.select" 		value=""/>
+
+			<!-- regular IN states -->
+			<option optionid="AP" 	label="state.in.andhrapradesh"    value="AP"/>
+			<option optionid="AR" 	label="state.in.arunachalpradesh" value="AR"/>
+			<option optionid="AS" 	label="state.in.assam" 	          value="AS"/>
+			<option optionid="BR" 	label="state.in.bihar" 		      value="BR"/>
+			<option optionid="CG" 	label="state.in.chattisgarh" 	  value="CG"/>
+			<option optionid="DL" 	label="state.in.delhi" 		      value="DL"/>
+			<option optionid="GA" 	label="state.in.goa" 	          value="GA"/>
+			<option optionid="GJ" 	label="state.in.gujurat" 		  value="GJ"/>
+			<option optionid="HR" 	label="state.in.haryana" 		  value="HR"/>
+			<option optionid="HP" 	label="state.in.himachalpradesh"  value="HP"/>
+			<option optionid="JK" 	label="state.in.jammukashmir" 	  value="JK"/>
+			<option optionid="JH" 	label="state.in.jharkhand" 		  value="JH"/>
+			<option optionid="KR" 	label="state.in.karnataka" 		  value="KR"/>
+			<option optionid="KL" 	label="state.in.kerala" 		  value="KL"/>
+			<option optionid="MP"	label="state.in.madhyapradesh" 	  value="MP"/>
+			<option optionid="MH"	label="state.in.maharastra" 	  value="MH"/>
+			<option optionid="MN"	label="state.in.manipur" 		  value="MN"/>
+			<option optionid="ML"	label="state.in.meghalya" 		  value="ML"/>
+			<option optionid="MZ"	label="state.in.mizoram" 		  value="MZ"/>
+			<option optionid="NL"	label="state.in.nagaland" 		  value="NL"/>
+			<option optionid="OD"	label="state.in.odisha" 		  value="OD"/>
+			<option optionid="PB"	label="state.in.punjab"        	  value="PB"/>
+			<option optionid="RJ"	label="state.in.rajasthan" 		  value="RJ"/>
+			<option optionid="SK"	label="state.in.sikkim" 		  value="SK"/>
+			<option optionid="TN"	label="state.in.tamilnadu" 	      value="TN"/>
+			<option optionid="TS"	label="state.in.telangana" 		  value="TS"/>
+			<option optionid="TR"	label="state.in.tripura" 		  value="TR"/>
+			<option optionid="UK"	label="state.in.uttarakhand" 	  value="UK"/>
+			<option optionid="UP"	label="state.in.uttarpradesh" 	  value="UP"/>
+			<option optionid="WB"	label="state.in.westbengal" 	  value="WB"/>
+
+			<!-- Other -->
+			<option optionid="OTHER" label="state.us.other" 				value="OTHER"/>
+		</options>
+	</field>
+</form>

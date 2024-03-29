@@ -1,0 +1,28 @@
+@import "~base/miniCart";
+
+.minicart {
+    position: relative;
+
+    .popover {
+        top: 100%;
+        left: auto;
+        right: 0;
+        min-width: 23.44rem;
+        min-height: 22.7rem;
+        display: none;
+
+        &::before {
+            left: auto;
+            right: 15px;
+        }
+
+        &::after {
+            left: auto;
+            right: 16px;
+        }
+
+        &.show {
+            display: block;
+        }
+    }
+}

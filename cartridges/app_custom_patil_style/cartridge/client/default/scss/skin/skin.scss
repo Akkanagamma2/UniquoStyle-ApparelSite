@@ -1,0 +1,24 @@
+@import "~base/skin/skin";
+
+.main-menu {
+    background-color: #01718F; }
+
+.header-banner {
+    background-color: #01718F;
+    color: var(--skin-banner-text-color-1);
+}
+
+h1.header.page-title,
+h1.header.page-title::before {
+    background-color: #01718F;
+    color: var(--skin-heading-color-1-invert);
+}
+
+.refinements ul li button {
+    color: #01718F;
+}
+
+header ~ #maincontent .container a:not(.btn-primary, .btn-outline-primary) {
+    color: #01718F;
+    font-weight: 700;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19" secure="false">
+
+<field formid="paymentMethod" type="string" mandatory="true" />
+
+<field
+    formid = "captchaInput"
+    label = "label.input.cashDelivery.captchaInput"
+    type = "string"
+/>
+
+<field
+    formid = "enteredCaptcha"
+    label = "label.input.cashDelivery.enteredCaptcha"
+    mandatory = "true"
+    max-length="6" 
+    missing-error = "error.message.required"
+    type = "string"
+/>
+
+</form>
